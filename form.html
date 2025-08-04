@@ -1,35 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin-top: 50px;
-        }
-        .button {
-            background-color: blue;
-            color: white;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .button:hover {
-            background-color: darkblue;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevOps Demo Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #15171a;
+      color: #ffffff;
+      padding: 20px 10px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    header h1 {
+      font-size: 2rem;
+      letter-spacing: 1px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: #fff;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #ccc;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+      padding: 50px 30px;
+      flex-grow: 1;
+    }
+
+    .card {
+      background: #ffffff;
+      border-radius: 12px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+      transition: all 0.3s ease;
+      border: 1px solid #eee;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+      border-color: #007BFF;
+    }
+
+    .card h3 {
+      font-size: 1.3rem;
+      color: #007BFF;
+      margin-bottom: 10px;
+    }
+
+    .card p {
+      font-size: 0.95rem;
+      color: #444;
+    }
+
+    footer {
+      background-color: #15171a;
+      color: #ccc;
+      text-align: center;
+      padding: 18px;
+      font-size: 0.9rem;
+      margin-top: auto;
+    }
+
+    @media (max-width: 768px) {
+      .hero h2 {
+        font-size: 2rem;
+      }
+
+      .card h3 {
+        font-size: 1.1rem;
+      }
+
+      .card p {
+        font-size: 0.85rem;
+      }
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <h1>🚀 DevOps Solutions</h1>
+  </header>
 
-    <h1>DevOps Project Training on Kubernetes</h1>
+  <section class="hero">
+    <h2>Empower Your DevOps Journey</h2>
+    <p>Streamline software delivery with CI/CD, Docker, Kubernetes, and more.</p>
+  </section>
 
-    <button class="button" onclick="alert('Hello!')">Hello</button>
+  <section class="services">
+    <div class="card">
+      <h3>⚙️ CI/CD Pipelines</h3>
+      <p>Automate your deployments using Jenkins, GitHub Actions, and GitLab CI.</p>
+    </div>
+    <div class="card">
+      <h3>🐳 Docker</h3>
+      <p>Containerize your applications for seamless development and deployment.</p>
+    </div>
+    <div class="card">
+      <h3>☸️ Kubernetes</h3>
+      <p>Orchestrate and manage your containers at scale with Kubernetes.</p>
+    </div>
+    <div class="card">
+      <h3>🔐 Security & Monitoring</h3>
+      <p>Integrate tools like Prometheus, Grafana, and Vault for complete visibility.</p>
+    </div>
+    <div class="card">
+      <h3>🐙 GitHub</h3>
+      <p>Manage your source code and collaborate efficiently with GitHub.</p>
+    </div>
+    <div class="card">
+      <h3>🧪 SonarQube</h3>
+      <p>Ensure code quality and security through static code analysis.</p>
+    </div>
+    <div class="card">
+      <h3>🛡️ Trivy</h3>
+      <p>Scan your containers and code for vulnerabilities using Trivy.</p>
+    </div>
+  </section>
 
+  <footer>
+    <p>© 2025 DevOps Demo. All rights reserved.</p>
+  </footer>
 </body>
 </html>
-
